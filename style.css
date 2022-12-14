@@ -277,11 +277,14 @@ header {
     margin-top: 2rem;
 }
 
+.destinations p {
+    margin-bottom: 1rem;
+}
+
 .list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 .list img {
@@ -297,17 +300,17 @@ header {
     font-size: 1rem;
 }
 
-.list p, .list span{
-    color: #747474;
-    font-size: .9rem;
+.list p, .list span {
+    color: #6b6b6b;
+    font-size: 13px;
     width: 100%;
 }
 
-.plan{
+.plan {
     margin-top: 2rem;
 }
 
-.menu-filter{
+.menu-filter {
     display: flex;
     width: 100%;
 }
@@ -321,12 +324,13 @@ header {
     cursor: pointer;
 }
 
-.menu-filter li:nth-child(1){
+.menu-filter li:nth-child(1) {
     border: 1px solid #0071c2;
     color: #0071c2;
     padding: 10px 20px;
     border-radius: 20px;
     background-color: rgba(0,113,194,0.06);
+
 }
 
 .menu-filter img {
@@ -334,61 +338,63 @@ header {
     margin-right: 5px;
 }
 
-.residences > div:nth-child(1){
+.residences > div:nth-child(1) {
     display: flex;
-    margin: 2rem 0;
     justify-content: space-between;
+    margin: 2rem 0;
 }
 
-.residences > div:nth-child(1) a{
+.residences > div:nth-child(1) > button {
+    background-color: rgba(0, 113, 194, 0.113);
+    border: 1px solid #0071c2;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.residences > div:nth-child(1) > button > a {
     text-decoration: none;
     color: #0071c2;
 }
 
-.residences > div:nth-child(1) button {
-    border: 1px solid #0071c2;
-    color: #0071c2;
-    padding: 10px 15px;
-    border-radius: 8px;
-    background-color: rgba(0, 113, 194, 0.113);
-}
-
-.list-residences{
-    justify-content: flex-start;
-}
-
-.list-residences h5{
+.list-residences h5 {
     font-size: 13px;
     width: 80%;
 }
 
-.list-residences >  l1 {
-    margin-right: 3rem;
+.list-residences {
+    justify-content: flex-start;
 }
 
-.list-residences span:nth-child(1){
+.list-residences  > li {
+    margin-right: 1.5rem;
+}
+
+.list-residences span:nth-child(1) {
     background-color: #003580;
-    color: #fff;
+    color: white;
     padding: 3px;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
     border-radius: 5px 5px 5px 0;
 }
 
-.list-residences span:nth-child(2){
+.list-residences span:nth-child(2) {
     font-size: 12px;
     color: #000;
 }
 
-.list-residences span:nth-child(3){
+.list-residences span:nth-child(3) {
     font-size: 13px;
 }
 
-.list-residences p:nth-child(2){
+.list-residences p:nth-child(2) {
     margin: 4px 0;
 }
 
-.news-letter{
+.news-letter {
     background-color: #062755;
-    color: #fff;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -398,7 +404,7 @@ header {
     margin-top: 2rem;
 }
 
-.news-letter h2{
+.news-letter h2 {
     font-weight: 300;
 }
 
@@ -406,7 +412,7 @@ header {
     color: #bdbdbd;
 }
 
-.news-letter > form > input[type="email"]{
+.news-letter > form > input[type="email"] {
     width: 355px;
     height: 40px;
     border-radius: 5px;
@@ -415,10 +421,92 @@ header {
     border: none;
 }
 
-.news-letter > form > input[type="submit"]{
+.news-letter > form > input[type="submit"] {
     background-color: #0071c2;
-    color: #fff;
-    border-radius: 5px; 
+    color: white;
+    border-radius: 5px;
     border: none;
-    padding: .6rem 1rem;
+    padding: 0.7rem 1.3rem;
+    margin-left:  5px;
 }
+
+.news-letters > fomr{
+    display: flex;
+    align-items: center;
+    }
+
+    #sales {
+        background-color: #003580;
+        text-align: center;
+
+    }
+    
+    #sales > div {
+        padding: 1rem 0;
+        border-bottom: 1px solid ;
+
+    }
+
+    #sales > button {
+        background-color: transparent;
+        border: 1px solid white;
+        padding: 5px 12px ;
+        border-radius: 3px;
+
+    }
+
+    #sales > button > a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #sales-options ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sales-option > ul > li > a {
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    footer {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-option {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .footer-option ul {
+        margin: 2rem;
+    }
+    
+    footer a {
+        color: #0071c2;
+        margin:  2rem 0;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    footer > div > a {
+        color: #6b6b6b;
+        margin: 2rem ;
+    }
+
+    footer div:nth-child(2){
+        margin-top: 2rem;
+    }
+
+    
+
