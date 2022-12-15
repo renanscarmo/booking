@@ -144,9 +144,9 @@ header {
 }
 
 @media (max-width: 600px) { /* executa quando largura maxima da tela for ate 600px*/
-    #form--filter-content {
+    #form-filter-content {
         flex-direction: column;
-        height: 300px;
+        min-height: 250px;
     }
 
 }
